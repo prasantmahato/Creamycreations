@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/login.css" />
     <title>Login page</title>
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./css/login.css" />
+    <!-- fontawesome  -->
+    <script
+      src="https://kit.fontawesome.com/76e179e1bc.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <section>
@@ -21,10 +27,19 @@
               <input type="text" name="" placeholder="Username" />
               <input type="password" name="" placeholder="Password" />
               <input type="submit" name="" value="Login" />
-              <p class="signup">
-                Don't have an account ?
-                <a href="#" onclick="toggleForm();">Sign Up.</a>
-              </p>
+              <div class="sign-text">
+                <p class="signup">
+                  Don't have an account ?
+                  <a href="#" onclick="toggleForm();">Sign Up.</a>
+                </p>
+
+                <p class="signup">
+                  <a href="/"
+                    ><i class="fa fa-home" aria-hidden="true"></i>Back to
+                    Home</a
+                  >
+                </p>
+              </div>
             </form>
           </div>
         </div>
