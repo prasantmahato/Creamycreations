@@ -7,6 +7,9 @@
     <title>Creamy Creation</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/c2b0426893.js" crossorigin="anonymous"></script>
+    <script src="js/addToCart.js"></script>
 </head>
 <body>
   
@@ -46,6 +49,12 @@
               </ul>
             </li>
             </div>
+
+            <div class="p-2">
+              <li class="nav-item">
+              <a class="nav-link" href="cart.html">Cart <i class="fa fa-solid fa-cart-shopping"></i></a>
+            </li>
+            </div>
           </div>
             <!-- <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -59,8 +68,23 @@
     </div>
   </nav>
 
+  <section id="one">
+    <div class="shop_intro">
+      <img
+        src="images/cake-intro.jpeg"
+        class="shop_intro-image"
+        alt="cake-intro"
+      />
+      <div class="shop_intro-description">
+        <h1 class="shop_intro-title">Hey sugar!</h1>
+        <p class="shop_intro-subtitle">
+          Our cake bakery is small but with a big love for wonderful desserts.
+        </p>
+      </div>
+    </div>
+  </section>
 
-  <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
+  <!-- <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -68,10 +92,13 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000">
-        <img src="images/pexels-pixabay-461431.jpg" class="d-block w-100" alt="...">
+        <img src="images/pexels-valeria-boltneva-1639567.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>Explore Our Fresh Cakes</h5>
           <p>Some representative placeholder content for the first slide.</p>
+          <div class="slider-btn">
+            <a href="#products" class="btn">Order Now </a>
+          </div>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="2000">
@@ -79,6 +106,9 @@
         <div class="carousel-caption d-none d-md-block">
           <h5>Second slide label</h5>
           <p>Some representative placeholder content for the second slide.</p>
+          <div class="slider-btn">
+            <a href="#products" class="btn">Order Now </a>
+          </div>
         </div>
       </div>
       <div class="carousel-item">
@@ -86,6 +116,9 @@
         <div class="carousel-caption d-none d-md-block">
           <h5>Third slide label</h5>
           <p>Some representative placeholder content for the third slide.</p>
+          <div class="slider-btn">
+            <a href="#products" class="btn">Order Now </a>
+          </div>
         </div>
       </div>
     </div>
@@ -97,132 +130,138 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-  </div>
-
-      <div class="container">
-        <section id="one">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Harum cum temporibus sunt! Porro, eligendi dolor similique, necessitatibus nihil corrupti soluta commodi dignissimos deleniti, 
-            ipsum quod laudantium nulla voluptatum iure ipsa.
-          </p>
-        </section>
-      </div>
+  </div> -->
 
       <hr>
-      
-      <div class="container fluid">
 
-        <div class="row row-cols-5 row-cols-md-5 g-4 container fluid">
+      <div class="container fluid" id="products">
 
-          <div class="col">
-            <div class="card h-100">
-              <img src="images/cake1.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/pexels-abhinav-goswami-291528.jpg"  class="card-img-top fluid" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Cake1</h5>
+                  <p class="card-text">Cake description here..</p>
+                </div>
+                <div class="card">
+                  <a href="#" class="btn btn-warning">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
               </div>
-              <div class="card">
-                <a href="#" class="btn btn-warning">Buy Now</a>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/cake3.jpeg"  class="card-img-top fluid" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Cake1</h5>
+                  <p class="card-text">Cake description here..</p>
+                </div>
+                <div class="card">
+                  <a href="#" class="btn btn-warning" onclick="addToCart()">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/pexels-alexander-dummer-132694 Small.png"  class="card-img-top fluid" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Cake1</h5>
+                  <p class="card-text">Cake description here..</p>
+                </div>
+                <div class="card">
+                  <a href="#" class="btn btn-warning">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/pexels-archie-binamira-1027811.jpg"  class="card-img-top fluid" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Cake1</h5>
+                  <p class="card-text">Cake description here..</p>
+                </div>
+                <div class="card">
+                  <a href="#" class="btn btn-warning">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/pexels-matheus-guimarães-1291712.jpg"  class="card-img-top fluid" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Cake1</h5>
+                  <p class="card-text">Cake description here..</p>
+                </div>
+                <div class="card">
+                  <a href="#" class="btn btn-warning">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/cake2.jpeg"  class="card-img-top fluid" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Cake1</h5>
+                  <p class="card-text">Cake description here..</p>
+                </div>
+                <div class="card">
+                  <a href="#" class="btn btn-warning">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/pexels-suzy-hazelwood-1126359.jpg"  class="card-img-top fluid" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Cake1</h5>
+                  <p class="card-text">Cake description here..</p>
+                </div>
+                <div class="card">
+                  <a href="#" class="btn btn-warning">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/cake3.jpeg"  class="card-img-top fluid" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Cake1</h5>
+                  <p class="card-text">Cake description here..</p>
+                </div>
+                <div class="card">
+                  <a href="#" class="btn btn-warning">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/pexels-vojtech-okenka-1055272.jpg"  class="card-img-top fluid" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Cake1</h5>
+                  <p class="card-text">Cake description here..</p>
+                </div>
+                <div class="card">
+                  <a href="#" class="btn btn-warning">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/pexels-abhinav-goswami-291528.jpg"  class="card-img-top fluid" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Cake1</h5>
+                  <p class="card-text">Cake description here..</p>
+                </div>
+                <div class="card">
+                  <a href="#" class="btn btn-warning">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col">
-            <div class="card h-100">
-              <img src="images/cake2.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a short card.</p>
-              </div>
-              <div class="card">
-                <a href="#" class="btn btn-warning">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100">
-              <img src="images/cake3.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-              </div>
-              <div class="card">
-                <a href="#" class="btn btn-warning">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100">
-              <img src="images/pexels-matheus-guimarães-1291712.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-              <div class="card">
-                <a href="#" class="btn btn-warning">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100">
-              <img src="images/cake1.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-              <div class="card">
-                <a href="#" class="btn btn-warning">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100">
-              <img src="images/cake2.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a short card.</p>
-              </div>
-              <div class="card">
-                <a href="#" class="btn btn-warning">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100">
-              <img src="images/cake1.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-              <div class="card">
-                <a href="#" class="btn btn-warning">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100">
-              <img src="images/cake2.jpeg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a short card.</p>
-              </div>
-              <div class="card">
-                <a href="#" class="btn btn-warning">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
       </div>
-        
-      <hr>
+
+      <br>
 
       <nav aria-label="Page navigation example">
         <ul class="pagination justify-content-center">
@@ -237,6 +276,19 @@
           </li>
         </ul>
       </nav>
+      <hr>
+      <div class="container">
+        <div class="footer">
+          <nav>
+            <ul>
+              <li>ABC</li>
+              <li>XYZ</li>
+              <li>123</li>
+              <li>789</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
