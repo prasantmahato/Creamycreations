@@ -3,63 +3,63 @@ let carts = document.querySelectorAll(".add-cart");
 
 let products = [
     {
-        name: "Black Forest",
-        tag: "cake1",
-        price: 399,
+        name: "Chocolate-Jelly Cake",
+        tag: "pexels-abhinav-goswami-291528.jpg",
+        price: 260,
         inCart: 0
     },
     {
-        name: "Black Forest",
-        tag: "cake2",
-        price: 399,
+        name: "Coffe-Cream Cake",
+        tag: "cake3.jpeg",
+        price: 300,
         inCart: 0
     },
     {
-        name: "Black Forest",
-        tag: "cake3",
-        price: 399,
+        name: "Chocolate Cake",
+        tag: "pexels-alexander-dummer-132694 Small.png",
+        price: 355,
         inCart: 0
     },
     {
-        name: "Black Forest",
-        tag: "cake1",
-        price: 399,
+        name: "White-Forest Cake",
+        tag: "pexels-archie-binamira-1027811.jpg",
+        price: 420,
         inCart: 0
     },
     {
-        name: "Black Forest",
-        tag: "Chocolate cake",
-        price: 399,
+        name: "Strawberry-Coffee Cake",
+        tag: "pexels-matheus-guimarães-1291712.jpg",
+        price: 450,
         inCart: 0
     },
     {
-        name: "Black Forest",
-        tag: "Chocolate cake",
-        price: 399,
+        name: "Raspberry-Chocolate Cake",
+        tag: "cake2.jpeg",
+        price: 499,
         inCart: 0
     },
     {
-        name: "Black Forest",
-        tag: "Chocolate cake",
-        price: 399,
+        name: "Raspberry-Cherry Cake",
+        tag: "pexels-suzy-hazelwood-1126359.jpg",
+        price: 379,
         inCart: 0
     },
     {
-        name: "Black Forest",
-        tag: "Chocolate cake",
-        price: 399,
+        name: "Coffee-Cream Cake",
+        tag: "cake3.jpeg",
+        price: 345,
         inCart: 0
     },
     {
-        name: "Black Forest",
-        tag: "Chocolate cake",
-        price: 399,
+        name: "Vanilla Cupcake",
+        tag: "pexels-vojtech-okenka-1055272.jpg ",
+        price: 150,
         inCart: 0
     },
     {
-        name: "Black Forest",
-        tag: "Chocolate cake",
-        price: 399,
+        name: "Chocolate-Jelly Cake",
+        tag: "pexels-abhinav-goswami-291528.jpg",
+        price: 378,
         inCart: 0
     },
 
@@ -147,7 +147,7 @@ function displayCart(){
         Object.values(cartItems).map(item => {
             productContainer.innerHTML += `
             <div class="product">
-                <img src="/images/${item.tag}.jpeg">
+                <img src="/images/${item.tag}" alt="${item.name}">
                 <span>${item.name}</span>
             
             </div>
