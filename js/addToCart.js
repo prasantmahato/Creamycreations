@@ -5,61 +5,61 @@ let products = [
     {
         name: "Chocolate-Jelly Cake",
         tag: "pexels-abhinav-goswami-291528.jpg",
-        price: 260,
+        price: 269.00,
         inCart: 0
     },
     {
         name: "Coffe-Cream Cake",
         tag: "cake3.jpeg",
-        price: 300,
+        price: 399.00,
         inCart: 0
     },
     {
         name: "Chocolate Cake",
         tag: "pexels-alexander-dummer-132694 Small.png",
-        price: 355,
+        price: 359.00,
         inCart: 0
     },
     {
         name: "White-Forest Cake",
         tag: "pexels-archie-binamira-1027811.jpg",
-        price: 420,
+        price: 449.00,
         inCart: 0
     },
     {
         name: "Strawberry-Coffee Cake",
         tag: "pexels-matheus-guimarães-1291712.jpg",
-        price: 450,
+        price: 599.00,
         inCart: 0
     },
     {
         name: "Raspberry-Chocolate Cake",
         tag: "cake2.jpeg",
-        price: 499,
+        price: 499.00,
         inCart: 0
     },
     {
         name: "Raspberry-Cherry Cake",
         tag: "pexels-suzy-hazelwood-1126359.jpg",
-        price: 379,
+        price: 379.00,
         inCart: 0
     },
     {
         name: "Coffee-Cream Cake",
         tag: "cake3.jpeg",
-        price: 345,
+        price: 349.00,
         inCart: 0
     },
     {
         name: "Vanilla Cupcake",
         tag: "pexels-vojtech-okenka-1055272.jpg ",
-        price: 150,
+        price: 149.00,
         inCart: 0
     },
     {
         name: "Chocolate-Jelly Cake",
         tag: "pexels-abhinav-goswami-291528.jpg",
-        price: 378,
+        price: 379.00,
         inCart: 0
     },
 
